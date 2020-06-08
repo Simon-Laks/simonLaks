@@ -443,13 +443,77 @@
 
 } )( window );
 
+const page1 = document.querySelector('.page1fr')
+const page2 = document.querySelector('.page2fr')
+const page3 = document.querySelector('.page3fr')
+const page4 = document.querySelector('.page4fr')
+const page5 = document.querySelector('.page5fr')
+const page6 = document.querySelector('.page6fr')
+const page7 = document.querySelector('.page7fr')
+const page8 = document.querySelector('.page8fr')
+const page9 = document.querySelector('.page9fr')
 
-const element1 = document.querySelector('.element1')
-const element2 = document.querySelector('.element2')
-const element3 = document.querySelector('.element3')
-const element4 = document.querySelector('.element4')
 
-console.log(element1)
-console.log(element2)
-console.log(element3)
-console.log(element4)
+
+const img = './frenchFlag.png'
+const img2 = './englishFlag.png'
+
+
+const en = './SVG/Page1-en.svg'
+const en1 = './SVG/Page2-en.svg'
+const en2 = './SVG/Page3-en.svg'
+const en3 = './SVG/Page4-en.svg'
+const en4 = './SVG/Page5-en.svg'
+const en5 = './SVG/Page6-en.svg'
+const en6 = './SVG/Page7-en.svg'
+const en7 = './SVG/Page8-en.svg'
+const en8 = './SVG/Page9-en.svg'
+
+const fr = './SVG/Page1-fr.svg'
+const fr1 = './SVG/Page2-fr.svg'
+const fr2 = './SVG/Page3-fr.svg'
+const fr3 = './SVG/Page4-fr.svg'
+const fr4 = './SVG/Page5-fr.svg'
+const fr5 = './SVG/Page6-fr.svg'
+const fr6 = './SVG/Page7-fr.svg'
+const fr7 = './SVG/Page8-fr.svg'
+const fr8 = './SVG/Page9-fr.svg'
+
+console.log(img)
+let counter = 0
+
+const englishFlag = document.querySelector('.englishFlag')
+console.log(englishFlag)
+
+englishFlag.addEventListener('click', () =>
+{
+	counter++
+	console.log(counter)
+	if(counter%2 != 0)
+	{
+		englishFlag.src = `${img}`
+		page1.src = `${en}`
+		page2.src = `${en1}`
+		page3.src = `${en2}`
+		page4.src = `${en3}`
+		page5.src = `${en4}`
+		page6.src = `${en5}`
+		page7.src = `${en6}`
+		page8.src = `${en7}`
+		page9.src = `${en8}`
+	}
+	else if(counter%2 == 0)
+	{
+		englishFlag.src = `${img2}`
+		page1.src = `${fr}`
+		page2.src = `${fr1}`
+		page3.src = `${fr2}`
+		page4.src = `${fr3}`
+		page5.src = `${fr4}`
+		page6.src = `${fr5}`
+		page7.src = `${fr6}`
+		page8.src = `${fr7}`
+		page9.src = `${fr8}`
+	}
+	console.log('coucou')
+})
