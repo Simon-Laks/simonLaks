@@ -406,11 +406,16 @@ h4
 {
 	margin: 0;
     font-size: 80%;
-    color: #000000;
+    color: white;
 }
 
 .download
 {
 	text-decoration: none;
     color: white;
+}
+
+.download:hover
+{
+	color: black;
 }
